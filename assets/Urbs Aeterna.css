@@ -1,0 +1,1017 @@
+@font-face {
+    font-family: "RomanNumerals";
+    src: url("../assets/RomanNumerals-Regular.otf");
+}
+@font-face {
+    font-family: "Albertus";
+    src: url("../assets/Fonts/Albertus MT Regular.otf");
+}
+@font-face {
+    font-family: "AlegreyaSans";
+    src: url("../assets/Fonts/AlegreyaSans-Black.ttf");
+}
+@font-face {
+    font-family: "BioRhyme_Bold";
+    src: url("../assets/Fonts/BioRhyme-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "BioRhyme";
+    src: url("../assets/Fonts/BioRhyme-Regular.ttf");
+}
+@font-face {
+    font-family: "IMFell";
+    src: url("../assets/Fonts/IMFellDWPica-Regular.ttf");
+}
+@font-face {
+    font-family: "MinionPro-Bold";
+    src: url("../assets/Fonts/MinionPro-Bold.otf");
+}
+@font-face {
+    font-family: "MinionPro-It";
+    src: url("../assets/Fonts/MinionPro-It.otf");
+}
+@font-face {
+    font-family: "MinionPro-Regular";
+    src: url("../assets/Fonts/MinionPro-Regular.otf");
+}
+.character .window-content, .equippableItem .window-content, .custom-dialog .window-content {
+    background: url(../assets/FondoUA.jpg);
+    background-size: 100% 100%;
+	color:black;
+}
+.custom-system-actor .window-content {
+  position: relative;
+}
+[data-key="retrato"] {
+  anchor-name: --portrait-anchor;
+  min-width: 20%; 
+  min-height: 200px;
+}
+.xAxyV5H72qbJI3HX .profile-img-container {
+  position: absolute;
+  position-anchor: --portrait-anchor;
+  top: anchor(top);
+  left: anchor(left);
+  width: anchor-size(width);
+  height: anchor-size(height);
+  object-fit: cover;
+  margin: 0;
+  z-index: 5;
+}
+.custom-system-sheet-actions select {
+background:transparent;
+border-radius:0px;
+border-width: 0px 0px 1px 0px;
+border-color:black;
+border-style: solid;
+color:black;
+}
+.xAxyV5H72qbJI3HX .header-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Keep the top elements first */
+.xAxyV5H72qbJI3HX .header-fields > .charname {
+  order: 1;
+}
+
+.xAxyV5H72qbJI3HX .header-fields > .custom-system-customHeader {
+  order: 2;
+}
+
+/* Push the second div to the bottom */
+.xAxyV5H72qbJI3HX .header-fields > .custom-system-sheet-actions {
+  order: 3;
+  width: 100%; /* Spans full width underneath */
+}
+.logo_urbs {
+position:absolute;
+background: url(../assets/UrbsLogo.webp);
+    background-size: contain;
+    min-height:150px;
+    width:250px;
+    background-repeat: no-repeat;
+    top:0;
+    left:0;
+    pointer-events:none;
+}
+.xAxyV5H72qbJI3HX .charname {
+margin-left:250px;
+}
+.charname input[type="text"]{
+	background-color:transparent;
+    color:white;
+    background:#8f3835;
+border-image-source: url(../assets/BordesRojo.webp);
+    border-image-slice: 23%;
+    border-image-width: 15px 15px;
+    border-image-outset: 2px;
+    font-size:3rem;
+    height:5rem;
+    border-image-repeat: repeat;
+    background-clip: content-box;
+    text-align:center;
+	margin-bottom:0px;
+	font-family: "Albertus";
+	text-transform: uppercase;
+	font-weight:100;
+}
+.itemname input[type="text"]{
+	font-size:2rem;
+	border-width: 0px 0px 1.5px 0px;
+	background-color:transparent;
+	border-color: black;
+	border-radius:0px;
+    color:black;
+	font-family: "Albertus";
+	font-weight:100;
+}
+.text_concepto {
+	font-family: "BioRhyme_Bold";
+    color:#451529;
+    font-size:1.5rem;
+}
+.texto_frase {
+	font-family: "MinionPro-It";
+    font-size:1.3rem;
+}
+.text_input_concepto input {
+background:transparent;
+border-radius:0px;
+border-width: 0px 0px 1px 0px;
+border-color:black;
+border-style: solid;
+color:black;
+font-family: "BioRhyme_Bold";
+color:#451529;
+font-size:1.5rem;
+}
+.text_input input {
+background:transparent;
+border-radius:0px;
+border-width: 0px 0px 1px 0px;
+border-color:black;
+border-style: solid;
+color:black;
+font-family: "MinionPro-It";
+font-size:1.3rem;
+}
+.text_input select {
+background:transparent;
+border-radius:0px;
+border-width: 0px 0px 1px 0px;
+border-color:black;
+border-style: solid;
+color:black;
+font-family: "MinionPro-It";
+font-size:1.3rem;
+}
+.text_input_evol input{
+background:white;
+border:2px solid #7e6e61;
+width:30px;
+padding:0px;
+color:black;
+}
+.text_input_evol {
+margin:0px;
+font-family: "BioRhyme";
+	font-size:1rem;
+}
+.text_title {
+	font-family: "AlegreyaSans";
+	color:#451529;
+	font-size:1.5rem;
+	text-transform: uppercase;
+	font-weight:100;
+}
+.text_evol {
+	font-family: "AlegreyaSans";
+	color:#7e6e61;
+	font-size:1rem;
+	text-transform: uppercase;
+	font-weight:100;
+}
+.lab_hab {
+	font-family: "AlegreyaSans";
+	color:#451529;
+	font-size:1.5rem;
+	font-weight:100;
+}
+.lab_hab .custom-system-rollable > *{
+ color:#451529;
+}
+.text_titulo_trasfondo {
+	font-family: "MinionPro-Bold";
+	font-variant: small-caps;
+	font-size:1.2rem;
+}
+.text_trasfondo {
+	font-family: "MinionPro-Regular";
+	font-size:1rem;
+}
+.text_trasfondo select{
+	font-family: "MinionPro-Regular";
+	font-size:1rem;
+	background:transparent;
+border-radius:0px;
+border-width: 0px 0px 1px 0px;
+border-color:black;
+border-style: solid;
+color:black;
+}
+.text_subtitle_mag {
+	font-family: "AlegreyaSans";
+	color:#7e6e61;
+	font-size:1rem;
+}
+.texto_esp input {
+	font-family: "MinionPro-It";
+}
+.lab_vitinc {
+	font-family: "AlegreyaSans";
+	color:#451529;
+	font-size:1.5rem;
+	font-weight:100;
+}
+.mag_num input{
+background-image: url(../assets/Casilla_urbs.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size:100% 100%;
+    color:black;
+    min-width:30px;
+    min-height:30px;
+    max-width:30px;
+    max-height:30px;
+    border-radius:0px;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    background-color:transparent;
+	text-align:center;
+	font-family: "BioRhyme";
+	font-size:1rem;
+	margin-top:auto;
+	margin-bottom:auto;
+}
+.num_habil input{
+background-image: url(../assets/Casilla_urbs.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size:100% 100%;
+    color:black;
+    min-width:40px;
+    min-height:40px;
+    max-width:40px;
+    max-height:40px;
+    border-radius:0px;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    background-color:transparent;
+	font-family: "BioRhyme";
+	font-size:1.5rem;
+}
+.iniciativa_num {
+background-image: url(../assets/Marco_transp.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size:100% 100%;
+    color:black;
+    min-width:30px;
+    min-height:30px;
+    max-width:30px;
+    max-height:30px;
+    border-radius:0px;
+    padding:0px;
+    border:0px;
+    background-color:transparent;
+	font-family: "BioRhyme";
+	font-size:1rem;
+    margin:auto;
+    justify-content:center;
+}
+.panel_global >:first-child {
+display:grid;
+grid-template-columns: 20% 20% 20% 20% 20%;
+    gap:3px;
+}
+.panelvit >:first-child {
+gap:2px;
+margin:auto;
+}
+.incappanel >:first-child {
+gap:2px;
+width:70%;
+margin:auto;
+}
+.panelhab2 >:first-child {
+background-color: #dad4cf80;
+border-image-source: url(../assets/Border.webp);
+    border-image-slice: 15%;
+    border-image-width: 15px 15px;
+    border-image-outset: 2px;
+    padding:5px;
+    border-radius:15px;
+}
+.panel_vitaincap >:first-child {
+background-color: #dad4cf80;
+border-image-source: url(../assets/Border.webp);
+    border-image-slice: 15%;
+    border-image-width: 15px 15px;
+    border-image-outset: 2px;
+    padding:5px;
+    border-radius:15px;
+}
+.panel_mag >:first-child {
+background-color: #f1edea80;
+border-image-source: url(../assets/Border.webp);
+    border-image-slice: 15%;
+    border-image-width: 15px 15px;
+    border-image-outset: 2px;
+    padding:5px;
+    border-radius:15px;
+    padding-top:0px;
+}
+.panel_mag >:first-child >:first-child{
+border:0px;
+border-right:2px;
+border-style:solid;
+padding-top:5px;
+padding-left:10px;
+border-color: #d0c5c3;
+}
+.panel_mag_second {
+margin-right:30px;
+font-family: "MinionPro-It";
+font-size:1rem;
+}
+ .panel_mag_second .custom-system-rollable > *{
+ color:#451529;
+ }
+.panel_mag_second >:first-child {
+gap:3px 0px;
+display:grid;
+grid-template-columns: 80% 20%;
+}
+.panel_mag_second >:first-child >:nth-child(odd)  {
+margin:0px;
+border:0px;
+border-bottom:1px;
+border-style:solid;
+border-color: #d0c5c3;
+}
+.panel_mag_second >:first-child >:nth-child(even)  {
+margin:0px;
+}
+.panel_top_frase >:first-child {
+display:grid;
+grid-template-columns: 10% 90%;
+gap:0px;
+margin:0px;
+}
+.panel_trasfondo {
+	background-color: transparent;
+border-image-source: url('../assets/Borde trasfondo.webp');
+    border-image-slice: 33%;
+    border-image-width: 20px 15px;
+    border-image-repeat: repeat;
+    padding-top:15px;
+}
+.marginzero {
+margin:0px;
+}
+.panel_combate_extra >:first-child {
+display:grid;
+grid-template-columns: 33% 33% 33%;
+    gap:0px;
+    margin:0px;
+}
+.panel_iniciativa >:first-child {
+display:grid;
+grid-template-columns: 40% 20%;
+    gap:0px;
+    margin:0px;
+}
+.panel_iniciativa {
+margin:0px;
+}
+.panel_concepto_pnj >:first-child {
+display:grid;
+grid-template-columns: 23% 77%;
+gap:0px;
+}
+.tabla_esp table{
+background:transparent;
+margin:0px;
+}
+.tabla_esp table tbody tr:nth-child(even) {
+background:transparent;
+}
+.tabla_esp table tr:first-child{
+display:none;
+}
+.tabla_esp table tr td:first-child input{
+background:transparent;
+border-radius:0px;
+border-width: 0px 0px 1px 0px;
+border-color:black;
+border-style: solid;
+color:black;
+}
+.tabla_esp table tr td {
+padding:0px;
+}
+.tabla_hab table tr{
+	display:grid;
+    grid-template-columns: 70% 30%;
+    gap:0px;
+}
+.tabla_hab table{
+ background:transparent;
+ 	margin:0px;
+}
+.tabla_hab table tr td div{
+margin:0px;
+}
+.tabla_hab table tr td{
+padding:0px;
+padding-top:5px;
+}
+.tabla_armas table, .tabla_armas table tbody tr:nth-child(even) {
+background:transparent;
+}
+.tabla_armas {
+background:#f1edea80;
+border-image-source: url(../assets/Border.webp);
+    border-image-slice: 15%;
+    border-image-width: 15px 15px;
+    border-image-outset: 2px;
+    border-radius:15px;
+    padding:0px 5px;
+	font-family: "MinionPro-Regular";
+	font-size:1rem;
+}
+.tabla_armas .custom-system-rollable > *{
+ color:#451529;
+ }
+.tabla_armas table td:first-child a{
+	color: black;
+	border:0px;
+	background:transparent;
+    padding:0px;
+}
+.tabla_armas table td:first-child a img{
+	display:none;
+}
+.tabla_armas table td {
+padding:0px;
+}
+.tabla_armas table {
+margin:0px;
+}
+.tabla_armas table tr:first-child td {
+border:0px;
+border-right:2px;
+border-style:solid;
+padding-top:5px;
+padding-left:10px;
+border-color: #d0c5c3;
+font-family: "AlegreyaSans";
+color:#7e6e61;
+font-size:1rem;
+}
+.tabla_armas table tr:first-child td:last-child, .tabla_armas table tr:first-child td:nth-child(4) {
+border:0px;
+}
+.tabla_armas table tr td:last-child {
+width:5%;
+padding:0px;
+margin:0px;
+}
+.tabla_armas table tr td {
+padding-left:10px;
+}
+.tabla_armas table tr td div{
+margin:0px;
+}
+.tabla_prot table, .tabla_prot table tbody tr:nth-child(even) {
+background:transparent;
+}
+.tabla_prot {
+background:#f1edea80;
+border-image-source: url(../assets/Border.webp);
+    border-image-slice: 15%;
+    border-image-width: 15px 15px;
+    border-image-outset: 2px;
+    border-radius:15px;
+    padding:0px 5px;
+	margin-top:10px;
+font-family: "MinionPro-Regular";
+	font-size:1rem;
+}
+.tabla_prot table td:first-child a{
+	color: black;
+	border:0px;
+	background:transparent;
+    padding:0px;
+}
+.tabla_prot table td:first-child a img{
+	display:none;
+}
+.tabla_prot table td {
+padding:0px;
+}
+.tabla_prot table {
+margin:0px;
+}
+.tabla_prot table tr:first-child td {
+border:0px;
+border-right:2px;
+border-style:solid;
+padding-top:5px;
+padding-left:10px;
+border-color: #d0c5c3;
+font-family: "AlegreyaSans";
+color:#7e6e61;
+font-size:1rem;
+}
+.tabla_prot table tr:first-child td:last-child, .tabla_prot table tr:first-child td:nth-child(3),.tabla_prot table tr:first-child td:nth-child(4), .tabla_prot table tr:first-child td:nth-child(5), .tabla_prot table tr:first-child td:nth-child(6), .tabla_prot table tr:first-child td:nth-child(7), .tabla_prot table tr:first-child td:nth-child(8), .tabla_prot table tr:first-child td:nth-child(9) {
+border:0px;
+}
+.tabla_prot table tr td:last-child {
+width:5%;
+padding:0px;
+margin:0px;
+}
+.tabla_prot table tr td {
+padding-left:10px;
+}
+.tabla_prot table tr td div{
+margin:0px;
+}
+.tabla_prot table tr td:nth-child(3),.tabla_prot table tr td:nth-child(4), .tabla_prot table tr td:nth-child(5), .tabla_prot table tr td:nth-child(6), .tabla_prot table tr td:nth-child(7), .tabla_prot table tr td:nth-child(8) {
+width:20px;
+}
+.vitacheck1, .vitacheck2, .vitacheck3, .vitacheck4, .vitacheck5, .vitacheck6 {
+	margin:0px;
+}
+.vitacheck1 input[type="checkbox"] {
+	-webkit-appearance: initial;
+    appearance: initial;
+	background-image: url(../assets/check1vita.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25px;
+    cursor: pointer;
+	min-width: 25px;
+	min-height:25px;
+	max-width: 25px;
+	max-height:25px;
+	margin:0px;
+}
+.vitacheck1 input[type="checkbox"]:checked {
+	background-image: url(../assets/check1vitachecked.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+    cursor: pointer;
+}
+.vitacheck2 input[type="checkbox"] {
+	-webkit-appearance: initial;
+    appearance: initial;
+	background-image: url(../assets/check2vita.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25px;
+    cursor: pointer;
+	min-width: 25px;
+	min-height:25px;
+	max-width: 25px;
+	max-height:25px;
+	margin:0px;
+}
+.vitacheck2 input[type="checkbox"]:checked {
+	background-image: url(../assets/check2vitachecked.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+    cursor: pointer;
+}
+.vitacheck3 input[type="checkbox"] {
+	-webkit-appearance: initial;
+    appearance: initial;
+	background-image: url(../assets/check3vita.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25px;
+    cursor: pointer;
+	min-width: 25px;
+	min-height:25px;
+	max-width: 25px;
+	max-height:25px;
+	margin:0px;
+}
+.vitacheck3 input[type="checkbox"]:checked {
+	background-image: url(../assets/check3vitachecked.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+    cursor: pointer;
+}
+.vitacheck4 input[type="checkbox"] {
+	-webkit-appearance: initial;
+    appearance: initial;
+	background-image: url(../assets/check4vita.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25px;
+    cursor: pointer;
+	min-width: 25px;
+	min-height:25px;
+	max-width: 25px;
+	max-height:25px;
+	margin:0px;
+}
+.vitacheck4 input[type="checkbox"]:checked {
+	background-image: url(../assets/check4vitachecked.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+    cursor: pointer;
+}
+.vitacheck5 input[type="checkbox"] {
+	-webkit-appearance: initial;
+    appearance: initial;
+	background-image: url(../assets/check5vita.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25px;
+    cursor: pointer;
+	min-width: 25px;
+	min-height:25px;
+	max-width: 25px;
+	max-height:25px;
+	margin:0px;
+}
+.vitacheck5 input[type="checkbox"]:checked {
+	background-image: url(../assets/check5vitachecked.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+    cursor: pointer;
+}
+.vitacheck6 input[type="checkbox"] {
+	-webkit-appearance: initial;
+    appearance: initial;
+	background-image: url(../assets/check6vita.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25px;
+    cursor: pointer;
+	min-width: 25px;
+	min-height:25px;
+	max-width: 25px;
+	max-height:25px;
+	margin:0px;
+}
+.vitacheck6 input[type="checkbox"]:checked {
+	background-image: url(../assets/check6vitachecked.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+    cursor: pointer;
+}
+.vitacheck12, .vitacheck34 {
+	margin:0px;
+}
+.vitacheck12 input[type="checkbox"] {
+	-webkit-appearance: initial;
+    appearance: initial;
+	background-image: url(../assets/check12vita.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25px;
+    cursor: pointer;
+	min-width: 25px;
+	min-height:25px;
+	max-width: 25px;
+	max-height:25px;
+	margin:0px;
+}
+.vitacheck12 input[type="checkbox"]:checked {
+	background-image: url(../assets/check12vitachecked.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+    cursor: pointer;
+}
+.vitacheck34 input[type="checkbox"] {
+	-webkit-appearance: initial;
+    appearance: initial;
+	background-image: url(../assets/check34vita.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25px;
+    cursor: pointer;
+	min-width: 25px;
+	min-height:25px;
+	max-width: 25px;
+	max-height:25px;
+	margin:0px;
+}
+.vitacheck34 input[type="checkbox"]:checked {
+	background-image: url(../assets/check34vitachecked.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+    cursor: pointer;
+}
+.incapcheck1, .incapcheck2{
+	margin:0px;
+}
+.incapcheck1 input[type="checkbox"] {
+	-webkit-appearance: initial;
+    appearance: initial;
+	background-image:url(../assets/Casilla_urbs.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+    cursor: pointer;
+	min-width: 25px;
+	min-height:25px;
+	max-width: 25px;
+	max-height:25px;
+	margin:0px;
+}
+.incapcheck1 input[type="checkbox"]:checked {
+	background-image:url(../assets/Casilla_urbs_Checked.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+    cursor: pointer;
+}
+.incapcheck2 input[type="checkbox"] {
+	-webkit-appearance: initial;
+    appearance: initial;
+	background-image:url(../assets/Casilla_urbs_Hide.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+    cursor: pointer;
+	min-width: 25px;
+	min-height:25px;
+	max-width: 25px;
+	max-height:25px;
+	margin:0px;
+}
+.incapcheck2 input[type="checkbox"]:checked {
+	background-image:url(../assets/Casilla_urbs_Hide_Checked.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+    cursor: pointer;
+}
+.res_check {
+}
+.magiacheck {
+}
+.vitacheck1 input[type="checkbox"]::before, .vitacheck2 input[type="checkbox"]::before, .vitacheck3 input[type="checkbox"]::before, .vitacheck4 input[type="checkbox"]::before, .vitacheck5 input[type="checkbox"]::before, .vitacheck6 input[type="checkbox"]::before, .vitacheck12 input[type="checkbox"]::before, .vitacheck34 input[type="checkbox"]::before,.vitacheck1 input[type="checkbox"]:checked::after, .vitacheck2 input[type="checkbox"]:checked::after, .vitacheck3 input[type="checkbox"]:checked::after, .vitacheck4 input[type="checkbox"]:checked::after, .vitacheck5 input[type="checkbox"]:checked::after, .vitacheck6 input[type="checkbox"]:checked::after, .vitacheck12 input[type="checkbox"]:checked::after, .vitacheck34 input[type="checkbox"]:checked::after, .incapcheck1 input[type="checkbox"]::before, .incapcheck2 input[type="checkbox"]::before, .incapcheck1 input[type="checkbox"]:checked::after, .incapcheck2 input[type="checkbox"]:checked::after {
+    content: "";
+}
+.dice-tooltip .dice-rolls .roll.d6 {
+    background: white no-repeat center;
+  font-family: 'RomanNumerals';
+  font-size:32px;
+  color: #451529;
+  height:40px;
+  width: 40px;
+  border:0px;
+  border-radius:5px;
+  text-align:center;
+  position: relative;
+    line-height: 130%;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    font-weight: normal;
+  box-shadow: 2px 2px 5px black;
+  margin:5px;
+}
+.dice-roll .dice-formula {
+	display:none;
+}
+.dice-tooltip .part-header {
+	display:none;
+}
+.dice-total {
+	display:none;
+}
+.dice-tooltip .dice-rolls {
+	display: flex;
+ 	justify-content: center;
+  flex-wrap:wrap;
+}
+.dice-roll .dice-tooltip {
+	display: flex;
+ 	justify-content: center;
+}
+.chat-message .message-content hr {
+	display:none;
+}
+.chat-message .message-content h1{
+background:#8f3835;
+border-image-source: url(../assets/BordesRojo.webp);
+    border-image-slice: 23%;
+    border-image-width: 15px 15px;
+    border-image-outset: 2px;
+    font-size: 2rem;
+    border-image-repeat: repeat;
+    background-clip: content-box;
+    text-align: center;
+    color: white;
+    font-family: "Albertus";
+    height: 110%;
+    width: 100%;
+    margin: auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:0.5rem 0.6rem;
+}
+.chat-message .message-content h2{
+font-family: "Albertus";
+	font-size:1.5rem;
+	font-weight:200;
+	text-align:center;
+	border:0px;
+	margin:0px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.chat-message .message-content p{
+font-family: "MinionPro-Regular";
+	font-size:1rem;
+	font-weight:200;
+	text-align:center;
+	border:0px;
+}
+.chat-message .message-content {
+font-family: "MinionPro-Regular";
+	margin-top:10px;
+	font-size:1rem;
+	font-weight:200;
+	text-align:left;
+	border:0px;
+}
+.chat-message .message-header {
+	border-bottom:2px solid #451529;
+}
+.chat-message .message-header .message-sender{
+	font-family: "Albertus";
+	text-align:center;
+	font-size:2rem;
+	text-wrap: wrap;
+	line-height:80%;
+	margin-top:5px;
+	margin-bottom:5px;
+	color: #451529;
+	white-space: normal;
+}
+.message .message-header .message-metadata {
+	flex:0 0 50px;
+	margin-left: 0;
+}
+.message-timestamp {
+	font-family: "MinionPro-It";
+	text-wrap: wrap;
+	font-size:5px;
+}
+.chat-message {
+	background: url(../assets/FondoUA.jpg);
+	background-repeat: no-repeat;
+ 	background-size: 100% 100%;
+	background-clip: border-box;
+}
+.dice-tooltip .dice-rolls .roll.max {
+	filter: none;
+}
+.dice-tooltip .dice-rolls .roll.min {
+	filter: none;
+}
+.dice-tooltip img{
+	border:0px;
+	max-height: 45px;
+}
+.dice-tooltip .dice-rolls .roll.d6 riwhite{
+	background-image: none;
+}
+.message-content button {
+background-color: #d0c5c6;
+border-image-source: url('../assets/Border dark.webp');
+    border-image-slice: 15%;
+    border-image-width: 10px 10px;
+    border-image-outset: 0px;
+    text-align:center;
+  color:black;
+  font-family: "Albertus";
+  height:2rem;
+  width:100%;
+  margin:auto;
+}
+.custom-system-user-inputs{
+	background:transparent;
+	border:0px;
+}
+.custom-system-user-inputs tr{
+	display:grid;
+	grid-template-columns: auto auto;
+	gap:0px;
+}
+.custom-system-user-inputs td:first-child label{
+	vertical-align:middle;
+	height:100%;
+	display:flex;
+	align-items: center;
+}
+.custom-system-user-input-block   > :first-child{
+	display:grid;
+	grid-template-columns: auto auto auto;
+}
+.custom-system-user-input-button[data-inputaction="sub-10"] {
+	display:none;
+}
+.custom-system-user-input-button[data-inputaction="add-10"] {
+	display:none;
+}
+.custom-system-user-input-button[data-inputaction="sub-1"] {
+	color:black;
+}
+.custom-system-user-input-button[data-inputaction="add-1"] {
+	color:black;
+}
+.custom-system-user-inputs tr:nth-child(even) {
+	background-color:  transparent;
+}
+.custom-system-user-inputs td button{
+	font-family: "MinionPro-Regular";
+	font-size: 1rem;
+}
+.custom-system-user-inputs td{
+	font-family: "MinionPro-Regular";
+	font-size: 1rem;
+}
+.custom-system-user-inputs thead {
+	display:none;
+}
+.custom-system-user-inputs td input[type="number"] {
+	background-image: url(../assets/Casilla_urbs.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size:100% 100%;
+    color:black;
+    min-width:30px;
+    min-height:30px;
+    max-width:30px;
+    max-height:30px;
+    border-radius:0px;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    background-color:transparent;
+	text-align:center;
+	font-family: "BioRhyme";
+	font-size:1rem;
+	margin-top:auto;
+	margin-bottom:auto;
+}
+.custom-system-user-inputs select {
+background:transparent;
+border-radius:0px;
+border-width: 0px 0px 1px 0px;
+border-color:black;
+border-style: solid;
+color:black;
+}
+.custom-dialog .window-content button[type="button"] {
+background-color: #d0c5c6;
+border-image-source: url('../assets/Border dark.webp');
+    border-image-slice: 15%;
+    border-image-width: 10px 10px;
+    border-image-outset: 0px;
+    text-align:center;
+  color:black;
+  font-family: "Albertus";
+  height:2rem;
+  width:100%;
+  margin:auto;
+}
+.custom-dialog .window-content button[type="submit"] {
+background-color: #d0c5c6;
+border-image-source: url('../assets/Border dark.webp');
+    border-image-slice: 15%;
+    border-image-width: 10px 10px;
+    border-image-outset: 0px;
+    text-align:center;
+  color:black;
+  font-family: "Albertus";
+  height:2rem;
+  width:100%;
+  margin:auto;
+}
+.character .window-content .fa-trash, .character .window-content .fa-sort-down, .character .window-content .fa-sort-up, .character .window-content .fa-plus-circle {
+color:#7e6e61;
+}

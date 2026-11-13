@@ -1,0 +1,79 @@
+{
+  "id": "urbs-aeterna-csb",
+  "title": "Urbs Aeterna - CSB",
+  "version": "3.0.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "custom-system-builder",
+        "type": "system",
+        "compatibility": {
+          "minimum": "6.0.2",
+          "verified": "6.1.2"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "dice-so-nice",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Pedro Baringo",
+      "url": "https://github.com/pedrobaringo",
+      "discord": "pedrobari",
+      "flags": {}
+    },
+    {
+      "name": "Diego López",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "modules/urbsaeterna.js",
+    "modules/welcomemessage.js"
+  ],
+  "styles": [
+    "assets/Urbs Aeterna.css"
+  ],
+  "scripts": [
+    "scripts/especialida_hook.js"
+  ],
+  "packs": [
+    {
+      "name": "templates-actores",
+      "label": "Templates Actores",
+      "path": "packs/templates-actores",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "custom-system-builder",
+      "flags": {}
+    },
+    {
+      "name": "templates-objetos",
+      "label": "Templates Objetos",
+      "path": "packs/templates-objetos",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "custom-system-builder",
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/pedrobaringo/urbs-aeterna-csb",
+  "manifest": "https://github.com/pedrobaringo/urbs-aeterna-csb/releases/latest/download/module.json",
+  "download": "https://github.com/pedrobaringo/urbs-aeterna-csb/releases/download/3.0.0/urbs-aeterna-csb.zip"
+}
