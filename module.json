@@ -1,7 +1,7 @@
 {
   "id": "urbs-aeterna-csb",
   "title": "Urbs Aeterna - CSB",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
@@ -75,5 +75,5 @@
   ],
   "url": "https://github.com/pedrobaringo/urbs-aeterna-csb",
   "manifest": "https://github.com/pedrobaringo/urbs-aeterna-csb/releases/latest/download/module.json",
-  "download": "https://github.com/pedrobaringo/urbs-aeterna-csb/releases/download/3.0.0/urbs-aeterna-csb.zip"
+  "download": "https://github.com/pedrobaringo/urbs-aeterna-csb/releases/download/3.0.1/urbs-aeterna-csb.zip"
 }

@@ -433,8 +433,9 @@ padding:0px;
  background:transparent;
  	margin:0px;
 }
-.tabla_hab table tr td div{
-margin:0px;
+.tabla_hab table tr td div {
+    margin: 0px;
+    margin-bottom: 5px;
 }
 .tabla_hab table tr td{
 padding:0px;
