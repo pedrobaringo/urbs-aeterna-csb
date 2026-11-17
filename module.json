@@ -72,6 +72,14 @@
       "system": "custom-system-builder",
       "flags": {}
     }
+  ],"media": [
+    {
+      "type": "setup",
+      "url": "modules/urbs-aeterna-csb/assets/PortadaModulo.webp",
+      "thumbnail": "modules/urbs-aeterna-csb/assets/PortadaModulo.webp",
+      "loop": false,
+      "flags": {}
+    }
   ],
   "url": "https://github.com/pedrobaringo/urbs-aeterna-csb",
   "manifest": "https://github.com/pedrobaringo/urbs-aeterna-csb/releases/latest/download/module.json",
