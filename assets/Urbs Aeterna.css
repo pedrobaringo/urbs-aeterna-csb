@@ -46,6 +46,7 @@
   anchor-name: --portrait-anchor;
   min-width: 20%; 
   min-height: 200px;
+  margin:0px;
 }
 .xAxyV5H72qbJI3HX .profile-img-container {
   position: absolute;
@@ -196,7 +197,8 @@ font-family: "BioRhyme";
 .lab_hab {
 	font-family: "AlegreyaSans";
 	color:#451529;
-	font-size:1.5rem;
+	font-size: 1.3rem;
+margin-left:5px;
 	font-weight:100;
 }
 .lab_hab .custom-system-rollable > *{
@@ -295,8 +297,8 @@ background-image: url(../assets/Marco_transp.webp);
 }
 .panel_global >:first-child {
 display:grid;
-grid-template-columns: 20% 20% 20% 20% 20%;
-    gap:3px;
+grid-template-columns: 13.5% 13.5% 13.5% 13.5% 13.5% 13.5% 19%;
+gap:0px;
 }
 .panelvit >:first-child {
 gap:2px;
@@ -1015,4 +1017,61 @@ border-image-source: url('../assets/Border dark.webp');
 }
 .character .window-content .fa-trash, .character .window-content .fa-sort-down, .character .window-content .fa-sort-up, .character .window-content .fa-plus-circle {
 color:#7e6e61;
+}
+.margin_top_vit {
+margin-top:30px;
+}
+.panel_evol {
+max-width:30%;
+margin-top:-20px;
+}
+.table_gasto_evol table, .table_gasto_evol table tbody tr:nth-child(even) {
+background:transparent;
+}
+.table_gasto_evol {
+background:#f1edea80;
+border-image-source: url(../assets/Border.webp);
+    border-image-slice: 15%;
+    border-image-width: 15px 15px;
+    border-image-outset: 2px;
+    border-radius:15px;
+    padding:0px 5px;
+	font-family: "MinionPro-Regular";
+	font-size:1rem;
+}
+.table_gasto_evol table tr:first-child td {
+border:0px;
+border-right:2px;
+border-style:solid;
+padding-top:5px;
+padding-left:10px;
+border-color: #d0c5c3;
+font-family: "AlegreyaSans";
+color:#7e6e61;
+font-size:1rem;
+}
+.table_gasto_evol table tr:first-child td:last-child, .table_gasto_evol table tr:first-child td:nth-child(2) {
+border:0px;
+}
+.table_gasto_evol table tr td:last-child {
+padding:0px;
+margin:0px;
+}
+.table_gasto_evol table tr {
+display:grid;
+grid-template-columns:50% 39% 12%;
+}
+.table_gasto_evol table tr td input{
+background:transparent;
+border-radius:0px;
+border-width: 0px 0px 1px 0px;
+border-color:black;
+border-style: solid;
+color:black;
+}
+.table_gasto_evol table td {
+padding:0px;
+}
+.table_gasto_evol table {
+margin:0px;
 }

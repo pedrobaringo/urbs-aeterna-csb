@@ -1,17 +1,14 @@
-2026/11/14-12:09:56.944 2fd8 Recovering log #289
-2026/11/14-12:09:56.951 2fd8 Level-0 table #291: started
-2026/11/14-12:09:56.959 2fd8 Level-0 table #291: 287880 bytes OK
-2026/11/14-12:09:56.964 2fd8 Delete type=0 #289
-2026/11/14-12:09:56.964 2fd8 Delete type=3 #288
-2026/11/14-12:49:36.669 1a34 Level-0 table #294: started
-2026/11/14-12:49:36.678 1a34 Level-0 table #294: 268138 bytes OK
-2026/11/14-12:49:36.681 1a34 Delete type=0 #292
-2026/11/14-12:49:36.682 1a34 Manual compaction at level-0 from '!actors!H1bx6wAkMkDwKsua' @ 72057594037927935 : 1 .. '!actors!xAxyV5H72qbJI3HX' @ 0 : 0; will stop at '!actors!xAxyV5H72qbJI3HX' @ 24 : 1
-2026/11/14-12:49:36.682 1a34 Compacting 2@0 + 1@1 files
-2026/11/14-12:49:36.692 1a34 Generated table #295@0: 2 keys, 124251 bytes
-2026/11/14-12:49:36.693 1a34 Compacted 2@0 + 1@1 files => 124251 bytes
-2026/11/14-12:49:36.697 1a34 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/11/14-12:49:36.697 1a34 Delete type=2 #285
-2026/11/14-12:49:36.697 1a34 Delete type=2 #291
-2026/11/14-12:49:36.697 1a34 Delete type=2 #294
-2026/11/14-12:49:36.713 1a34 Manual compaction at level-0 from '!actors!xAxyV5H72qbJI3HX' @ 24 : 1 .. '!actors!xAxyV5H72qbJI3HX' @ 0 : 0; will stop at (end)
+2026/11/17-12:45:14.338 2958 Recovering log #293
+2026/11/17-12:45:14.343 2958 Delete type=0 #293
+2026/11/17-12:45:14.343 2958 Delete type=3 #290
+2026/11/17-15:40:34.150 31e0 Level-0 table #299: started
+2026/11/17-15:40:34.160 31e0 Level-0 table #299: 370463 bytes OK
+2026/11/17-15:40:34.162 31e0 Delete type=0 #297
+2026/11/17-15:40:34.180 31e0 Manual compaction at level-0 from '!actors!H1bx6wAkMkDwKsua' @ 72057594037927935 : 1 .. '!actors!xAxyV5H72qbJI3HX' @ 0 : 0; will stop at '!actors!xAxyV5H72qbJI3HX' @ 32 : 1
+2026/11/17-15:40:34.180 31e0 Compacting 1@0 + 1@1 files
+2026/11/17-15:40:34.191 31e0 Generated table #300@0: 2 keys, 185283 bytes
+2026/11/17-15:40:34.191 31e0 Compacted 1@0 + 1@1 files => 185283 bytes
+2026/11/17-15:40:34.193 31e0 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/17-15:40:34.195 31e0 Delete type=2 #295
+2026/11/17-15:40:34.195 31e0 Delete type=2 #299
+2026/11/17-15:40:34.195 31e0 Manual compaction at level-0 from '!actors!xAxyV5H72qbJI3HX' @ 32 : 1 .. '!actors!xAxyV5H72qbJI3HX' @ 0 : 0; will stop at (end)
