@@ -91,11 +91,13 @@ position:absolute;
 background: url(../assets/UrbsLogo.webp);
     background-size: contain;
     min-height:150px;
+	max-height:150px;
     width:250px;
     background-repeat: no-repeat;
     top:0;
     left:0;
     pointer-events:none;
+	background-position: top left;
 }
 .xAxyV5H72qbJI3HX .charname {
 margin-left:250px;
@@ -222,6 +224,10 @@ border-width: 0px 0px 1px 0px;
 border-color:black;
 border-style: solid;
 color:black;
+}
+.armausada_select select {
+	padding:0px;
+	margin:0px;
 }
 .text_subtitle_mag {
 	font-family: "AlegreyaSans";
@@ -392,10 +398,10 @@ grid-template-columns: 33% 33% 33%;
     margin:0px;
 }
 .panel_iniciativa >:first-child {
-display:grid;
-grid-template-columns: 40% 20%;
-    gap:0px;
-    margin:0px;
+    display: grid;
+    grid-template-columns: 35% 15% 50%;
+    gap: 0px;
+    margin: 0px;
 }
 .panel_iniciativa {
 margin:0px;
@@ -551,6 +557,9 @@ margin:0px;
 }
 .tabla_prot table tr td {
 padding-left:10px;
+}
+.tabla_prot table tr:last-child td{
+	padding-bottom:5px;
 }
 .tabla_prot table tr td div{
 margin:0px;
